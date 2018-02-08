@@ -1,3 +1,4 @@
 Designing Login And Registration Form Using JavaFx
 01. 일단 따라해보기
-02.
+02. MVC 패턴형식을 위해 패키지 작성 (imgs 별도추가)
+03. 실행은 Main.class, 메인 css 작성
