@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
@@ -10,9 +12,9 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@../Main.css" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.MainController">
    <children>
-      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="400.0" styleClass="loginBtn">
          <children>
             <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" smooth="false">
                <image>
@@ -46,16 +48,27 @@
                   <Font size="17.0" />
                </font>
             </Label>
-            <Label layoutX="37.0" layoutY="128.0" text="로그인" textFill="#544b4b">
+            <Label layoutX="37.0" layoutY="128.0" styleClass="loginBtn" text="로그인" textFill="#544b4b">
                <font>
                   <Font name="Monaco" size="12.0" />
                </font>
             </Label>
-            <JFXTextField focusColor="#6747cd" labelFloat="true" layoutX="36.0" layoutY="195.0" promptText="이메일" unFocusColor="#6747cd">
+            <JFXTextField focusColor="#6747cd" labelFloat="true" layoutX="36.0" layoutY="195.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="이메일" unFocusColor="#6747cd">
                <font>
                   <Font size="14.0" />
                </font>
             </JFXTextField>
+            <JFXPasswordField focusColor="#6747cd" labelFloat="true" layoutX="36.0" layoutY="256.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="40.0" prefWidth="300.0" promptText="비밀번호" unFocusColor="#6747cd">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <Label layoutX="256.0" layoutY="318.0" styleClass="loginBtn" text="비밀번호 찾기" textFill="#544b4b">
+               <font>
+                  <Font name="Monaco" size="12.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="37.0" layoutY="402.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="300.0" ripplerFill="#0777ff" styleClass="loginBtn" text="로그인" />
          </children>
       </Pane>
    </children>

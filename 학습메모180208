@@ -2,3 +2,5 @@ Designing Login And Registration Form Using JavaFx
 01. 일단 따라해보기
 02. MVC 패턴형식을 위해 패키지 작성 (imgs 별도추가)
 03. 실행은 Main.class, 메인 css 작성
+04. scene빌더에서 css 적용안되는것 해결중... 일단 미적용으로 진행
+05. css 해결됨...  나의 결론은 먼저 css 작성후 scene빌더에서 선택적용
